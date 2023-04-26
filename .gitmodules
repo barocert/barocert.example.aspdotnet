@@ -1,0 +1,6 @@
+[submodule "Barocert"]
+	path = Barocert
+	url = https://github.com/barocert/barocert.dotnet
+[submodule "Linkhub"]
+	path = Linkhub
+	url = https://github.com/linkhub-sdk/linkhub.dotnet
