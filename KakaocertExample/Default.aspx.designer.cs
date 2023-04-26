@@ -7,7 +7,7 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace KakaocertExample {
+namespace BarocertExample {
     
     
     public partial class _Default {

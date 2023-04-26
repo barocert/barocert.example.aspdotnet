@@ -7,7 +7,7 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace Kakaocert.Example.Example {
+namespace Barocert.Example.Example {
     
     
     public partial class verifySign {

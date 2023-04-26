@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Kakaocert.Example.Example
+namespace Barocert.Example.Example
 {
     public partial class requestCMS : System.Web.UI.Page
     {

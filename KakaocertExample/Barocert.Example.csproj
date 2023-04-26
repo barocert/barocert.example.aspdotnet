@@ -42,9 +42,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto">
-      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core">
@@ -183,8 +180,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\barocert\Barocert.csproj">
-      <Project>{5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C}</Project>
+    <ProjectReference Include="..\Barocert\Barocert.csproj">
+      <Project>{5a7ab6ff-a5bd-4fc9-8bdf-622337ec9a7c}</Project>
       <Name>Barocert</Name>
     </ProjectReference>
     <ProjectReference Include="..\Linkhub\Linkhub.csproj">
@@ -194,9 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

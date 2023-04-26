@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Kakaocert.Example.Example
+namespace Barocert.Example.Example
 {
     /**
     * 전자서명 요청시 반환된 접수아이디를 통해 서명을 검증합니다. (단건)
@@ -29,10 +29,10 @@ namespace Kakaocert.Example.Example
         {
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "020040000001";
+            String clientCode = "023030000004";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02304050230300000040000000000007";
+            String receiptId = "02304270230300000040000000000003";
 
             try
             {

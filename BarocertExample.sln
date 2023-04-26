@@ -4,10 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barocert.Example", "KakaocertExample\Barocert.Example.csproj", "{4B954FEC-50A4-4E5E-8467-E4793771BA24}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C} = {5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkhub", "Linkhub\Linkhub.csproj", "{F960F70D-9C37-46F8-A1D4-938A81BE9855}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barocert", "barocert\Barocert.csproj", "{5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barocert", "Barocert\Barocert.csproj", "{5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

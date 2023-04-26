@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="requestCMS.aspx.cs" Inherits="Kakaocert.Example.Example.requestCMS" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="requestCMS.aspx.cs" Inherits="Barocert.Example.Example.requestCMS" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
