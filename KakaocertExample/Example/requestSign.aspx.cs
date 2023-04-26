@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Barocert.Example.Example
+namespace Kakaocert.Example.Example
 {
     public partial class requestSign : System.Web.UI.Page
     {

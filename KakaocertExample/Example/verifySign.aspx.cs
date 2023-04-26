@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Barocert.Example.Example
+namespace Kakaocert.Example.Example
 {
     /**
     * 전자서명 요청시 반환된 접수아이디를 통해 서명을 검증합니다. (단건)

@@ -11,14 +11,14 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Barocert.Example.Example
+namespace Kakaocert.Example.Example
 {
     public partial class requestCMS : System.Web.UI.Page
     {
 
         public String code;
         public String message;
-        public CMSReceipt responseObj;
+        public CMSReceipt result;
 
         /**
         * 카카오톡 사용자에게 자동이체 출금동의 전자서명을 요청합니다.
@@ -70,7 +70,7 @@ namespace Barocert.Example.Example
 
             try
             {
-                responseObj = Global.kakaocertService.requestCMS(clientCode, cms);
+                result = Global.kakaocertService.requestCMS(clientCode, cms);
             }
             catch (BarocertException ex)
             {

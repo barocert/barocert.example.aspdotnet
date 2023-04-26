@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="requestCMS.aspx.cs" Inherits="Barocert.Example.Example.requestCMS" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="requestCMS.aspx.cs" Inherits="Kakaocert.Example.Example.requestCMS" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -18,8 +18,8 @@
 				<li>Response.code : <%= code %> </li>
 				<li>Response.message : <%= message %></li>
 			<% } else { %>
-				<li>receiptId (접수아이디) : <%= responseObj.receiptID%></li>
-				<li>tx_id (카카오톡 트랜잭션아이디[AppToApp호출용]) : <%= responseObj.scheme%></li>
+				<li>receiptId (접수아이디) : <%= result.receiptID%></li>
+                <li>Scheme (앱스킴) :  <%= result.scheme %></li>
 			<% } %>
 		</ul>
 	</fieldset>

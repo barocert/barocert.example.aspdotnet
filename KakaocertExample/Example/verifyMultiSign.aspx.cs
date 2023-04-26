@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Barocert.Example.Example
+namespace Kakaocert.Example.Example
 {
     public partial class verifyMultiSign : System.Web.UI.Page
     {
@@ -29,10 +29,10 @@ namespace Barocert.Example.Example
         {
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "020040000001";
+            String clientCode = "023030000004";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02304050230300000040000000000006";
+            String receiptId = "02304270230300000040000000000005";
 
 
             try

@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Barocert.Example.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Kakaocert.Example.Global" Language="C#" %>
