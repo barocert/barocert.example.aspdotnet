@@ -1,10 +1,7 @@
 # barocert.example.aspdotnet
 
-### Barocert API Example for ASP.NET Core
+### Barocert API Example for ASP.NET
 
-
-#### install .NET CLI
-    $ dotnet add package Barocert --version 1.0.0
 
 사이트
 -------------------------------
