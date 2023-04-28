@@ -32,9 +32,9 @@ namespace Kakaocert.Example.Example
 
             // 수신자 정보
             // 휴대폰번호,성명,생년월일 또는 Ci(연계정보)값 중 택 일
-            sign.receiverHP = Global.kakaocertService.encrypt("01054437896");
-            sign.receiverName = Global.kakaocertService.encrypt("최상혁");
-            sign.receiverBirthday = Global.kakaocertService.encrypt("19880301");
+            sign.receiverHP = Global.kakaocertService.encrypt("01012341234");
+            sign.receiverName = Global.kakaocertService.encrypt("홍길동");
+            sign.receiverBirthday = Global.kakaocertService.encrypt("19700101");
             // sign.ci =kakaocertService.encrypt("");
 
             // 인증요청 메시지 제목 - 최대 40자

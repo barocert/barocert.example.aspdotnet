@@ -33,9 +33,9 @@ namespace Kakaocert.Example.Example
 
             // 수신자 정보
             // 휴대폰번호,성명,생년월일 또는 Ci(연계정보)값 중 택 일
-            multiSign.receiverHP = Global.kakaocertService.encrypt("01054437896");
-            multiSign.receiverName = Global.kakaocertService.encrypt("최상혁");
-            multiSign.receiverBirthday = Global.kakaocertService.encrypt("19880301");
+            multiSign.receiverHP = Global.kakaocertService.encrypt("01012341234");
+            multiSign.receiverName = Global.kakaocertService.encrypt("홍길동");
+            multiSign.receiverBirthday = Global.kakaocertService.encrypt("19700101");
             // multiSign.ci = Global.kakaocertService.encrypt("");
 
             // 인증요청 메시지 제목 - 최대 40자
