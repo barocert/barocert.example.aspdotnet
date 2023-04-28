@@ -35,7 +35,7 @@ namespace Kakaocert.Example.Example
             sign.receiverHP = Global.kakaocertService.encrypt("01012341234");
             sign.receiverName = Global.kakaocertService.encrypt("홍길동");
             sign.receiverBirthday = Global.kakaocertService.encrypt("19700101");
-            // sign.ci =kakaocertService.encrypt("");
+            // sign.ci = Global.kakaocertService.encrypt("");
 
             // 인증요청 메시지 제목 - 최대 40자
             sign.reqTitle = "전자서명단건테스트";

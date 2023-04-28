@@ -14,10 +14,10 @@ namespace Kakaocert.Example
     public class Global : System.Web.HttpApplication
     {
         // 링크아이디
-        private string LinkID = "LINKHUB_BC";
+        private string LinkID = "TESTER";
 
         // 비밀키
-        private string SecretKey = "npCAl0sHPpJqlvMbrcBmNagrxkQ74w9Sl0A+M++kMCE=";
+        private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
         // kakaocert 서비스 객체 선언
         public static KakaocertService kakaocertService;
