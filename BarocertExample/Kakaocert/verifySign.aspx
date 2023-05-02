@@ -20,7 +20,7 @@
 			<% } else { %>
 				<li>ReceiptID (접수아이디) : <%= result.receiptID%></li>
 				<li>State (상태) : <%= result.state%></li>
-                <li>SignedData (전자서명 데이터 전문) : <%= result.signedData%></li>
+				<li>SignedData (전자서명 데이터 전문) : <%= result.signedData%></li>
 				<li>Ci (연계정보) : <%= result.ci%></li>
 			<% } %>
 		</ul>

@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="content">
-	<p class="heading1">카카오 자동시체 출금동의 요청 API SDK Example</p>
+	<p class="heading1">카카오 자동이체 출금동의 요청 API SDK Example</p>
 	<br/>
 	<fieldset class="fieldset1">
 		<legend>자동이체 출금동의 요청</legend>
@@ -19,7 +19,7 @@
 				<li>Response.message : <%= message %></li>
 			<% } else { %>
 				<li>ReceiptId (접수아이디) : <%= result.receiptID%></li>
-                <li>Scheme (앱스킴) :  <%= result.scheme %></li>
+				<li>Scheme (앱스킴) :  <%= result.scheme %></li>
 			<% } %>
 		</ul>
 	</fieldset>
