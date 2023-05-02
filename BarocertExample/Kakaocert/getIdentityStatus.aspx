@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getSignStatus.aspx.cs" Inherits="Kakaocert.Example.Example.getSignStatus" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getIdentityStatus.aspx.cs" Inherits="Kakaocert.Example.Example.getIdentityStatus" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,7 +12,7 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>전자서명 서명상태 확인</legend>
+		<legend>본인인증 서명상태 확인</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>
@@ -34,7 +34,7 @@
                 <li>VerifyDT (서명검증일시) : <%=result.verifyDT %></li>
                 <li>Scheme (앱스킴) : <%=result.scheme %></li>
                 <li>AppUseYN (앱사용유무) : <%=result.appUseYN %></li>
-			<% } %>
+            <% } %>
 		</ul>
 	</fieldset>
 </div>

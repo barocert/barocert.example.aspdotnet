@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="verifyCMS.aspx.cs" Inherits="Kakaocert.Example.Example.verifyCMS" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="verifyMultiSign.aspx.cs" Inherits="Kakaocert.Example.Example.verifyMultiSign" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,15 +12,18 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>자동이체 출금동의 서명검증</legend>
+		<legend>전자서명 서명검증</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>
 				<li>Response.message : <%= message %></li>
 			<% } else { %>
-                <li>receiptID (접수아이디) : <%= result.receiptID%></li>
+				<li>ReceiptID (접수아이디) : <%= result.receiptID%></li>
 				<li>State (상태) : <%= result.state%></li>
-                <li>signedData (전자서명 데이터 전문) : <%= result.signedData%></li>
+                <% foreach (String signedData in result.multiSignedData)
+                    { %>
+                        <li>SignedData (전자서명 데이터 전문) : <%= signedData%></li>
+                <% } %>
 				<li>Ci (연계정보) : <%= result.ci%></li>
 			<% } %>
 		</ul>

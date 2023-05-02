@@ -65,18 +65,18 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Example.css" />
-    <Content Include="Example\getCMSStatus.aspx" />
-    <Content Include="Example\getSignStatus.aspx" />
-    <Content Include="Example\getIdentityStatus.aspx" />
-    <Content Include="Example\requestCMS.aspx" />
-    <Content Include="Example\requestSign.aspx" />
-    <Content Include="Example\requestIdentity.aspx" />
-    <Content Include="Example\verifyIdentity.aspx" />
-    <Content Include="Example\verifyCMS.aspx" />
-    <Content Include="Example\verifySign.aspx" />
-    <Content Include="Example\getMultiSignStatus.aspx" />
-    <Content Include="Example\requestMultiSign.aspx" />
-    <Content Include="Example\verifyMultiSign.aspx" />
+    <Content Include="Kakaocert\getCMSStatus.aspx" />
+    <Content Include="Kakaocert\getSignStatus.aspx" />
+    <Content Include="Kakaocert\getIdentityStatus.aspx" />
+    <Content Include="Kakaocert\requestCMS.aspx" />
+    <Content Include="Kakaocert\requestSign.aspx" />
+    <Content Include="Kakaocert\requestIdentity.aspx" />
+    <Content Include="Kakaocert\verifyIdentity.aspx" />
+    <Content Include="Kakaocert\verifyCMS.aspx" />
+    <Content Include="Kakaocert\verifySign.aspx" />
+    <Content Include="Kakaocert\getMultiSignStatus.aspx" />
+    <Content Include="Kakaocert\requestMultiSign.aspx" />
+    <Content Include="Kakaocert\verifyMultiSign.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -88,88 +88,88 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getCMSStatus.aspx.cs">
+    <Compile Include="Kakaocert\getCMSStatus.aspx.cs">
       <DependentUpon>getCMSStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\getCMSStatus.aspx.designer.cs">
+    <Compile Include="Kakaocert\getCMSStatus.aspx.designer.cs">
       <DependentUpon>getCMSStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getSignStatus.aspx.cs">
+    <Compile Include="Kakaocert\getSignStatus.aspx.cs">
       <DependentUpon>getSignStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\getSignStatus.aspx.designer.cs">
+    <Compile Include="Kakaocert\getSignStatus.aspx.designer.cs">
       <DependentUpon>getSignStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getIdentityStatus.aspx.cs">
+    <Compile Include="Kakaocert\getIdentityStatus.aspx.cs">
       <DependentUpon>getIdentityStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\getIdentityStatus.aspx.designer.cs">
+    <Compile Include="Kakaocert\getIdentityStatus.aspx.designer.cs">
       <DependentUpon>getIdentityStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\requestCMS.aspx.cs">
+    <Compile Include="Kakaocert\requestCMS.aspx.cs">
       <DependentUpon>requestCMS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\requestCMS.aspx.designer.cs">
+    <Compile Include="Kakaocert\requestCMS.aspx.designer.cs">
       <DependentUpon>requestCMS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\requestSign.aspx.cs">
+    <Compile Include="Kakaocert\requestSign.aspx.cs">
       <DependentUpon>requestSign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\requestSign.aspx.designer.cs">
+    <Compile Include="Kakaocert\requestSign.aspx.designer.cs">
       <DependentUpon>requestSign.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\requestIdentity.aspx.cs">
+    <Compile Include="Kakaocert\requestIdentity.aspx.cs">
       <DependentUpon>requestIdentity.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\requestIdentity.aspx.designer.cs">
+    <Compile Include="Kakaocert\requestIdentity.aspx.designer.cs">
       <DependentUpon>requestIdentity.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\verifyIdentity.aspx.cs">
+    <Compile Include="Kakaocert\verifyIdentity.aspx.cs">
       <DependentUpon>verifyIdentity.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\verifyIdentity.aspx.designer.cs">
+    <Compile Include="Kakaocert\verifyIdentity.aspx.designer.cs">
       <DependentUpon>verifyIdentity.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\verifyCMS.aspx.cs">
+    <Compile Include="Kakaocert\verifyCMS.aspx.cs">
       <DependentUpon>verifyCMS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\verifyCMS.aspx.designer.cs">
+    <Compile Include="Kakaocert\verifyCMS.aspx.designer.cs">
       <DependentUpon>verifyCMS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\verifySign.aspx.cs">
+    <Compile Include="Kakaocert\verifySign.aspx.cs">
       <DependentUpon>verifySign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\verifySign.aspx.designer.cs">
+    <Compile Include="Kakaocert\verifySign.aspx.designer.cs">
       <DependentUpon>verifySign.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getMultiSignStatus.aspx.cs">
+    <Compile Include="Kakaocert\getMultiSignStatus.aspx.cs">
       <DependentUpon>getMultiSignStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\getMultiSignStatus.aspx.designer.cs">
+    <Compile Include="Kakaocert\getMultiSignStatus.aspx.designer.cs">
       <DependentUpon>getMultiSignStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\requestMultiSign.aspx.cs">
+    <Compile Include="Kakaocert\requestMultiSign.aspx.cs">
       <DependentUpon>requestMultiSign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\requestMultiSign.aspx.designer.cs">
+    <Compile Include="Kakaocert\requestMultiSign.aspx.designer.cs">
       <DependentUpon>requestMultiSign.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\verifyMultiSign.aspx.cs">
+    <Compile Include="Kakaocert\verifyMultiSign.aspx.cs">
       <DependentUpon>verifyMultiSign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\verifyMultiSign.aspx.designer.cs">
+    <Compile Include="Kakaocert\verifyMultiSign.aspx.designer.cs">
       <DependentUpon>verifyMultiSign.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">

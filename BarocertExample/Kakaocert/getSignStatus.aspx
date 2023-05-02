@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getMultiSignStatus.aspx.cs" Inherits="Kakaocert.Example.Example.getMultiSignStatus" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getSignStatus.aspx.cs" Inherits="Kakaocert.Example.Example.getSignStatus" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -27,13 +27,14 @@
                 <li>ReqTitle (인증요청 메시지 제목) : <%=result.reqTitle %></li>
                 <li>AuthCategory (인증분류) : <%=result.authCategory %></li>
                 <li>ReturnURL (복귀 URL) : <%=result.returnURL %></li>
+                <li>TokenType (원문 구분) : <%=result.tokenType %></li>
                 <li>RequestDT (서명요청일시) : <%=result.requestDT %></li>
                 <li>ViewDT (서명조회일시) : <%=result.viewDT %></li>
                 <li>CompleteDT (서명완료일시) : <%=result.completeDT %></li>
                 <li>ExpireDT (서명만료일시) : <%=result.expireDT %></li>
                 <li>VerifyDT (서명검증일시) : <%=result.verifyDT %></li>
                 <li>Scheme (앱스킴) : <%=result.scheme %></li>
-                <li>AppUseYN (앱사용유무) : <%=result.appUseYN %></li>		
+                <li>AppUseYN (앱사용유무) : <%=result.appUseYN %></li>
 			<% } %>
 		</ul>
 	</fieldset>
