@@ -32,12 +32,12 @@ namespace Kakaocert.Example.Example
             // 출금동의 요청 정보 객체
             CMS cms = new CMS();
 
-            // 수신자 정보
-            // 휴대폰번호,성명,생년월일 또는 Ci(연계정보)값 중 택 일
+            // 수신자 휴대폰번호 - 11자 (하이픈 제외)
             cms.receiverHP = Global.kakaocertService.encrypt("01012341234");
+            // 수신자 성명 - 80자
             cms.receiverName = Global.kakaocertService.encrypt("홍길동");
+            // 수신자 생년월일 - 8자 (yyyyMMdd)
             cms.receiverBirthday= Global.kakaocertService.encrypt("19700101");
-            // cms.ci = Global.kakaocertService.encrypt("");
 
             // 인증요청 메시지 제목 - 최대 40자
             cms.reqTitle = "인증요청 메시지 제공란";
