@@ -25,7 +25,7 @@ namespace Kakaocert.Example.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "023030000004";
+            String clientCode = "023040000001";
 
             // 전자서명 요청 정보 객체
             Sign sign = new Sign();

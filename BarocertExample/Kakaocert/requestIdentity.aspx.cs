@@ -27,7 +27,7 @@ namespace Kakaocert.Example.Example
         {
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "023030000004";
+            String clientCode = "023040000001";
 
             // 본인인증 요청 정보 객체
             Identity identity = new Identity();
