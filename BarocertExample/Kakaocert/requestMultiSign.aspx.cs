@@ -21,6 +21,7 @@ namespace Kakaocert.Example.Example
 
         /**
         * 카카오톡 사용자에게 전자서명을 요청합니다.(복수)
+        * https://developers.barocert.com/reference/kakao/java/sign/api-multi#RequestMultiSign
         */
         protected void Page_Load(object sender, EventArgs e)
         {
