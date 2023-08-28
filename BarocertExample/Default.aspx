@@ -40,6 +40,51 @@
 			<li><a href="Kakaocert/verifyCMS.aspx">verifyCMS</a> - 자동이체 출금동의 서명검증</li>
 		</ul>
 	</fieldset>
+	<br/>
+	<fieldset class="fieldset1">
+		<legend>카카오 간편로그인 API</legend>
+		<ul>
+			<li><a href="Kakaocert/verifyLogin.aspx">verifyLogin</a> - 간편로그인 서명검증</li>
+		</ul>
+	</fieldset>
+	
+	
+	<br/>
+	<fieldset class="fieldset1">
+		<legend>패스 본인인증 API</legend>
+		<ul>
+			<li><a href="Passcert/requestIdentity.aspx">requestIdentity</a> - 본인인증 요청</li>
+			<li><a href="Passcert/getIdentityStatus.aspx">getIdentityStatus</a> - 본인인증 서명상태 확인</li>
+			<li><a href="Passcert/verifyIdentity.aspx">verifyIdentity</a> - 본인인증 서명검증</li>
+		</ul>
+	</fieldset>
+	<br/>
+	<fieldset class="fieldset1">
+		<legend>패스 전자서명 API</legend>
+		<ul>
+			<li><a href="Passcert/requestSign.aspx">requestSign</a> - 전자서명 요청</li>
+			<li><a href="Passcert/getSignStatus.aspx">getSignState</a> - 전자서명 서명상태 확인</li>
+			<li><a href="Passcert/verifySign.aspx">verifySign</a> - 전자서명 서명검증</li>
+		</ul>
+	</fieldset>
+	<br/>
+	<fieldset class="fieldset1">
+		<legend>패스 자동이체 출금동의 API</legend>
+		<ul>
+			<li><a href="Passcert/requestCMS.aspx">requestCMS</a> - 자동이체 출금동의 요청</li>
+			<li><a href="Passcert/getCMSStatus.aspx">getCMSState</a> - 자동이체 출금동의 서명상태 확인</li>
+			<li><a href="Passcert/verifyCMS.aspx">verifyCMS</a> - 자동이체 출금동의 서명검증</li>
+		</ul>
+	</fieldset>
+	<br/>
+	<fieldset class="fieldset1">
+		<legend>패스 간편로그인 API</legend>
+		<ul>
+			<li><a href="Passcert/requestLogin.aspx">requestLogin</a> - 간편로그인 요청</li>
+			<li><a href="Passcert/getLoginStatus.aspx">getLoginState</a> - 간편로그인 서명상태 확인</li>
+			<li><a href="Passcert/verifyLogin.aspx">verifyLogin</a> - 간편로그인 서명검증</li>
+		</ul>
+	</fieldset>
 </div>
 </body>
 </html>

@@ -1,4 +1,5 @@
 ﻿using Kakaocert;
+using Passcert;
 using System;
 using System.Collections;
 using System.Configuration;
@@ -9,32 +10,53 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Xml.Linq;
 
-namespace Kakaocert.Example
+namespace Barocert.Example
 {
     public class Global : System.Web.HttpApplication
     {
-        // 링크아이디
-        private string LinkID = "TESTER";
-
-        // 비밀키
-        private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
-
-        // kakaocert 서비스 객체 선언
+        // 카카오써트 서비스 객체 선언
         public static KakaocertService kakaocertService;
+        
+        // 카카오써트 링크아이디
+        private string kakaoLinkID = "TESTER";
+        // 카카오써트 비밀키
+        private string kakaoSecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
+        
+
+        // 패스써트 서비스 객체 선언
+        public static PasscertService passcertService;
+
+        // 패스써트 링크아이디
+        private string passLinkID = "TESTER";
+        // 패스써트 비밀키
+        private string passSecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // kakaocert 서비스 객체 초기화
-            kakaocertService = new KakaocertService(LinkID, SecretKey);
+            // 카카오써트 서비스 객체 초기화
+            kakaocertService = new KakaocertService(kakaoLinkID, kakaoSecretKey);
 
-            // 인증토큰 IP 제한기능 사용여부, 권장(true)
+            // 인증토큰 IP 제한기능 사용여부, true-사용, false-미사용, 기본값(true)
             kakaocertService.IPRestrictOnOff = true;
 
             // 카카오써트 API 서비스 고정 IP 사용여부, true-사용, false-미사용, 기본값(false)
             kakaocertService.UseStaticIP = false;
 
-            // 로컬시스템 시간 사용 여부 true(사용), false(기본값) - 미사용
+            // 로컬시스템 시간 사용여부, true-사용, false-미사용, 기본값(true)
             kakaocertService.UseLocalTimeYN = true;
+            
+
+            // 패스써트 서비스 객체 초기화
+            passcertService = new PasscertService(passLinkID, passSecretKey);
+
+            // 인증토큰 IP 제한기능 사용여부, true-사용, false-미사용, 기본값(true)
+            passcertService.IPRestrictOnOff = true;
+
+            // 패스써트 API 서비스 고정 IP 사용여부, true-사용, false-미사용, 기본값(false)
+            passcertService.UseStaticIP = false;
+
+            // 로컬시스템 시간 사용여부, true-사용, false-미사용, 기본값(true)
+            passcertService.UseLocalTimeYN = true;
         }
     }
 }
