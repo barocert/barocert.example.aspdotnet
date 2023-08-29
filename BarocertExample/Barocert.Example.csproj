@@ -73,11 +73,24 @@
     <Content Include="Kakaocert\requestIdentity.aspx" />
     <Content Include="Kakaocert\verifyIdentity.aspx" />
     <Content Include="Kakaocert\verifyCMS.aspx" />
+    <Content Include="Kakaocert\verifyLogin.aspx" />
     <Content Include="Kakaocert\verifySign.aspx" />
     <Content Include="Kakaocert\getMultiSignStatus.aspx" />
     <Content Include="Kakaocert\requestMultiSign.aspx" />
     <Content Include="Kakaocert\verifyMultiSign.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Passcert\getCMSStatus.aspx" />
+    <Content Include="Passcert\getIdentityStatus.aspx" />
+    <Content Include="Passcert\getLoginStatus.aspx" />
+    <Content Include="Passcert\getSignStatus.aspx" />
+    <Content Include="Passcert\requestCMS.aspx" />
+    <Content Include="Passcert\requestIdentity.aspx" />
+    <Content Include="Passcert\requestLogin.aspx" />
+    <Content Include="Passcert\requestSign.aspx" />
+    <Content Include="Passcert\verifyCMS.aspx" />
+    <Content Include="Passcert\verifyIdentity.aspx" />
+    <Content Include="Passcert\verifyLogin.aspx" />
+    <Content Include="Passcert\verifySign.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +157,13 @@
     <Compile Include="Kakaocert\verifyCMS.aspx.designer.cs">
       <DependentUpon>verifyCMS.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Kakaocert\verifyLogin.aspx.cs">
+      <DependentUpon>verifyLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kakaocert\verifyLogin.aspx.designer.cs">
+      <DependentUpon>verifyLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Kakaocert\verifySign.aspx.cs">
       <DependentUpon>verifySign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,6 +195,90 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Passcert\getCMSStatus.aspx.cs">
+      <DependentUpon>getCMSStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\getCMSStatus.aspx.designer.cs">
+      <DependentUpon>getCMSStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\getIdentityStatus.aspx.cs">
+      <DependentUpon>getIdentityStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\getIdentityStatus.aspx.designer.cs">
+      <DependentUpon>getIdentityStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\getLoginStatus.aspx.cs">
+      <DependentUpon>getLoginStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\getLoginStatus.aspx.designer.cs">
+      <DependentUpon>getLoginStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\getSignStatus.aspx.cs">
+      <DependentUpon>getSignStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\getSignStatus.aspx.designer.cs">
+      <DependentUpon>getSignStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\requestCMS.aspx.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\requestCMS.aspx.designer.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\requestIdentity.aspx.cs">
+      <DependentUpon>requestIdentity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\requestIdentity.aspx.designer.cs">
+      <DependentUpon>requestIdentity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\requestLogin.aspx.cs">
+      <DependentUpon>requestLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\requestLogin.aspx.designer.cs">
+      <DependentUpon>requestLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\requestSign.aspx.cs">
+      <DependentUpon>requestSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\requestSign.aspx.designer.cs">
+      <DependentUpon>requestSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\verifyCMS.aspx.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\verifyCMS.aspx.designer.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\verifyIdentity.aspx.cs">
+      <DependentUpon>verifyIdentity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\verifyIdentity.aspx.designer.cs">
+      <DependentUpon>verifyIdentity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\verifyLogin.aspx.cs">
+      <DependentUpon>verifyLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\verifyLogin.aspx.designer.cs">
+      <DependentUpon>verifyLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcert\verifySign.aspx.cs">
+      <DependentUpon>verifySign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcert\verifySign.aspx.designer.cs">
+      <DependentUpon>verifySign.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +290,9 @@
       <Project>{f960f70d-9c37-46f8-a1d4-938a81be9855}</Project>
       <Name>Linkhub</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
