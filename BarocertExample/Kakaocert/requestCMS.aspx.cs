@@ -40,7 +40,7 @@ namespace Kakaocert.Example.Example
             // 수신자 성명 - 80자
             cms.receiverName = Global.kakaocertService.encrypt("홍길동");
             // 수신자 생년월일 - 8자 (yyyyMMdd)
-            cms.receiverBirthday= Global.kakaocertService.encrypt("19700101");
+            cms.receiverBirthday = Global.kakaocertService.encrypt("19700101");
 
             // 인증요청 메시지 제목 - 최대 40자
             cms.reqTitle = "인증요청 메시지 제공란";
@@ -69,7 +69,7 @@ namespace Kakaocert.Example.Example
             // App to App 방식 이용시, 에러시 호출할 URL
             cms.returnURL = "https://www.kakaocert.com";
 
-            
+
 
             try
             {

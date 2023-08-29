@@ -38,7 +38,7 @@ namespace Kakaocert.Example.Example
             try
             {
                 result = Global.kakaocertService.getCMSStatus(clientCode, receiptId);
-                
+
             }
             catch (BarocertException ex)
             {

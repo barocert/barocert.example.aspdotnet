@@ -43,7 +43,7 @@ namespace Kakaocert.Example.Example
             // 인증요청 메시지 제목 - 최대 40자
             sign.reqTitle = "전자서명단건테스트";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
-            sign.expireIn =1000;
+            sign.expireIn = 1000;
             // 서명 원문 - 원문 2,800자 까지 입력가능
             sign.token = Global.kakaocertService.encrypt("전자서명단건테스트데이터");
             // 서명 원문 유형

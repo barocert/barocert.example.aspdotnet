@@ -5,12 +5,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-	<title>barocert SDK ASP.NET Example</title>
+	<title>Kakaocert SDK ASP.NET Example</title>
 	<link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
-	<p class="heading1">카카오 본인인증 요청 API SDK Example</p>
+	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
 		<legend>카카오 본인인증 요청</legend>

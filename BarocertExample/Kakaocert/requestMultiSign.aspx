@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="content">
-	<p class="heading1">카카오 전자서명 요청 API SDK Example</p>
+	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
 		<legend>카카오 전자서명(복수) 요청</legend>
