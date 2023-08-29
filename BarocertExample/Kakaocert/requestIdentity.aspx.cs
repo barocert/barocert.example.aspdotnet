@@ -10,6 +10,8 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using Barocert;
+using Barocert.Example;
 
 namespace Kakaocert.Example.Example
 {
@@ -20,10 +22,10 @@ namespace Kakaocert.Example.Example
         public String message;
         public IdentityReceipt result;
 
-        /**
-        * 카카오톡 사용자에게 본인인증 전자서명을 요청합니다.
-        * https://developers.barocert.com/reference/kakao/java/identity/api#RequestIdentity
-        */
+        /*
+         * 카카오톡 이용자에게 본인인증을 요청합니다.
+         * https://developers.barocert.com/reference/kakao/dotnet/identity/api#RequestIdentity
+         */
         protected void Page_Load(object sender, EventArgs e)
         {
 

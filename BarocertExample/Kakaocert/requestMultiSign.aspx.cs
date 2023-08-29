@@ -10,6 +10,8 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using Barocert;
+using Barocert.Example;
 
 namespace Kakaocert.Example.Example
 {
@@ -19,10 +21,10 @@ namespace Kakaocert.Example.Example
         public String message;
         public MultiSignReceipt result;
 
-        /**
-        * 카카오톡 사용자에게 전자서명을 요청합니다.(복수)
-        * https://developers.barocert.com/reference/kakao/java/sign/api-multi#RequestMultiSign
-        */
+        /*
+         * 카카오톡 이용자에게 복수(최대 20건) 문서의 전자서명을 요청합니다.
+         * https://developers.barocert.com/reference/kakao/dotnet/sign/api-multi#RequestMultiSign
+         */
         protected void Page_Load(object sender, EventArgs e)
         {
 

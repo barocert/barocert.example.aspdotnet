@@ -12,7 +12,7 @@
 	<p class="heading1">카카오 전자서명 요청 API SDK Example</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>전자서명 요청(복수)</legend>
+		<legend>카카오 전자서명(복수) 요청</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>

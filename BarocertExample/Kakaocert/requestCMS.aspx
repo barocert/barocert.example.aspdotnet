@@ -9,10 +9,10 @@
 </head>
 <body>
 <div id="content">
-	<p class="heading1">카카오 자동이체 출금동의 요청 API SDK Example</p>
+	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>자동이체 출금동의 요청</legend>
+		<legend>카카오 자동이체 출금동의 요청</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>

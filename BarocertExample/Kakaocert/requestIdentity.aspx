@@ -13,7 +13,7 @@
 	<p class="heading1">카카오 본인인증 요청 API SDK Example</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>본인인증 요청</legend>
+		<legend>카카오 본인인증 요청</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>
