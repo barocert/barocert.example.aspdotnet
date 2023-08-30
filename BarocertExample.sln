@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barocert.Kakaocert", "BarocertExample\Barocert.Kakaocert.csproj", "{4B954FEC-50A4-4E5E-8467-E4793771BA24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barocert.Kakaocert", "Barocert.Kakaocert\Barocert.Kakaocert.csproj", "{4B954FEC-50A4-4E5E-8467-E4793771BA24}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C} = {5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C}
 	EndProjectSection
