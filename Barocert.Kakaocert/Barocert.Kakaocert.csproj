@@ -4,23 +4,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4B954FEC-50A4-4E5E-8467-E4793771BA24}</ProjectGuid>
+    <ProjectGuid>{EED57D35-AE3F-4B9F-877D-A0230D3B46B9}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BarocertExample</RootNamespace>
-    <AssemblyName>BarocertExample</AssemblyName>
+    <RootNamespace>Barocert.Kakaocert</RootNamespace>
+    <AssemblyName>Barocert.Kakaocert</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <UseIISExpress>false</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,27 +53,28 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Example.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Example.css" />
     <Content Include="Example\getCMSStatus.aspx" />
-    <Content Include="Example\getSignStatus.aspx" />
     <Content Include="Example\getIdentityStatus.aspx" />
-    <Content Include="Global.asax" />
-    <Content Include="Example\requestCMS.aspx" />
-    <Content Include="Example\requestSign.aspx" />
-    <Content Include="Example\requestIdentity.aspx" />
-    <Content Include="Example\verifyIdentity.aspx" />
-    <Content Include="Example\verifyCMS.aspx" />
-    <Content Include="Example\verifyLogin.aspx" />
-    <Content Include="Example\verifySign.aspx" />
     <Content Include="Example\getMultiSignStatus.aspx" />
+    <Content Include="Example\getSignStatus.aspx" />
+    <Content Include="Example\requestCMS.aspx" />
+    <Content Include="Example\requestIdentity.aspx" />
     <Content Include="Example\requestMultiSign.aspx" />
+    <Content Include="Example\requestSign.aspx" />
+    <Content Include="Example\verifyCMS.aspx" />
+    <Content Include="Example\verifyIdentity.aspx" />
+    <Content Include="Example\verifyLogin.aspx" />
     <Content Include="Example\verifyMultiSign.aspx" />
+    <Content Include="Example\verifySign.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -95,71 +86,12 @@
     <Compile Include="Example\getCMSStatus.aspx.designer.cs">
       <DependentUpon>getCMSStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getSignStatus.aspx.cs">
-      <DependentUpon>getSignStatus.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getSignStatus.aspx.designer.cs">
-      <DependentUpon>getSignStatus.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Example\getIdentityStatus.aspx.cs">
       <DependentUpon>getIdentityStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Example\getIdentityStatus.aspx.designer.cs">
       <DependentUpon>getIdentityStatus.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Example\requestCMS.aspx.cs">
-      <DependentUpon>requestCMS.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\requestCMS.aspx.designer.cs">
-      <DependentUpon>requestCMS.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\requestSign.aspx.cs">
-      <DependentUpon>requestSign.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\requestSign.aspx.designer.cs">
-      <DependentUpon>requestSign.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\requestIdentity.aspx.cs">
-      <DependentUpon>requestIdentity.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\requestIdentity.aspx.designer.cs">
-      <DependentUpon>requestIdentity.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\verifyIdentity.aspx.cs">
-      <DependentUpon>verifyIdentity.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\verifyIdentity.aspx.designer.cs">
-      <DependentUpon>verifyIdentity.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\verifyCMS.aspx.cs">
-      <DependentUpon>verifyCMS.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\verifyCMS.aspx.designer.cs">
-      <DependentUpon>verifyCMS.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\verifyLogin.aspx.cs">
-      <DependentUpon>verifyLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\verifyLogin.aspx.designer.cs">
-      <DependentUpon>verifyLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\verifySign.aspx.cs">
-      <DependentUpon>verifySign.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\verifySign.aspx.designer.cs">
-      <DependentUpon>verifySign.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getMultiSignStatus.aspx.cs">
       <DependentUpon>getMultiSignStatus.aspx</DependentUpon>
@@ -168,6 +100,27 @@
     <Compile Include="Example\getMultiSignStatus.aspx.designer.cs">
       <DependentUpon>getMultiSignStatus.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getSignStatus.aspx.cs">
+      <DependentUpon>getSignStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSignStatus.aspx.designer.cs">
+      <DependentUpon>getSignStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestCMS.aspx.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestCMS.aspx.designer.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestIdentity.aspx.cs">
+      <DependentUpon>requestIdentity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestIdentity.aspx.designer.cs">
+      <DependentUpon>requestIdentity.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\requestMultiSign.aspx.cs">
       <DependentUpon>requestMultiSign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,12 +128,50 @@
     <Compile Include="Example\requestMultiSign.aspx.designer.cs">
       <DependentUpon>requestMultiSign.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\requestSign.aspx.cs">
+      <DependentUpon>requestSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestSign.aspx.designer.cs">
+      <DependentUpon>requestSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyCMS.aspx.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyCMS.aspx.designer.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyIdentity.aspx.cs">
+      <DependentUpon>verifyIdentity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyIdentity.aspx.designer.cs">
+      <DependentUpon>verifyIdentity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyLogin.aspx.cs">
+      <DependentUpon>verifyLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyLogin.aspx.designer.cs">
+      <DependentUpon>verifyLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\verifyMultiSign.aspx.cs">
       <DependentUpon>verifyMultiSign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Example\verifyMultiSign.aspx.designer.cs">
       <DependentUpon>verifyMultiSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifySign.aspx.cs">
+      <DependentUpon>verifySign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifySign.aspx.designer.cs">
+      <DependentUpon>verifySign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -190,15 +181,9 @@
       <Name>Barocert</Name>
     </ProjectReference>
     <ProjectReference Include="..\Linkhub\Linkhub.csproj">
-      <Project>{f960f70d-9c37-46f8-a1d4-938a81be9855}</Project>
+      <Project>{F960F70D-9C37-46F8-A1D4-938A81BE9855}</Project>
       <Name>Linkhub</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -218,7 +203,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63618</DevelopmentServerPort>
+          <DevelopmentServerPort>60548</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
