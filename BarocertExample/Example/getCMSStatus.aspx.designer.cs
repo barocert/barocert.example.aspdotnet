@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Barocert.Kakaocert {
+namespace Barocert.Kakaocert.Example {
     
     
-    public partial class _Default {
+    public partial class getCMSStatus {
         
         /// <summary>
         /// Head1 컨트롤입니다.

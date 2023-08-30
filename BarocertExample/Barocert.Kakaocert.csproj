@@ -1,0 +1,231 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B954FEC-50A4-4E5E-8467-E4793771BA24}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BarocertExample</RootNamespace>
+    <AssemblyName>BarocertExample</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Example.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Example\getCMSStatus.aspx" />
+    <Content Include="Example\getSignStatus.aspx" />
+    <Content Include="Example\getIdentityStatus.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Example\requestCMS.aspx" />
+    <Content Include="Example\requestSign.aspx" />
+    <Content Include="Example\requestIdentity.aspx" />
+    <Content Include="Example\verifyIdentity.aspx" />
+    <Content Include="Example\verifyCMS.aspx" />
+    <Content Include="Example\verifyLogin.aspx" />
+    <Content Include="Example\verifySign.aspx" />
+    <Content Include="Example\getMultiSignStatus.aspx" />
+    <Content Include="Example\requestMultiSign.aspx" />
+    <Content Include="Example\verifyMultiSign.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getCMSStatus.aspx.cs">
+      <DependentUpon>getCMSStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCMSStatus.aspx.designer.cs">
+      <DependentUpon>getCMSStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getSignStatus.aspx.cs">
+      <DependentUpon>getSignStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSignStatus.aspx.designer.cs">
+      <DependentUpon>getSignStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getIdentityStatus.aspx.cs">
+      <DependentUpon>getIdentityStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getIdentityStatus.aspx.designer.cs">
+      <DependentUpon>getIdentityStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestCMS.aspx.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestCMS.aspx.designer.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestSign.aspx.cs">
+      <DependentUpon>requestSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestSign.aspx.designer.cs">
+      <DependentUpon>requestSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestIdentity.aspx.cs">
+      <DependentUpon>requestIdentity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestIdentity.aspx.designer.cs">
+      <DependentUpon>requestIdentity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyIdentity.aspx.cs">
+      <DependentUpon>verifyIdentity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyIdentity.aspx.designer.cs">
+      <DependentUpon>verifyIdentity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyCMS.aspx.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyCMS.aspx.designer.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyLogin.aspx.cs">
+      <DependentUpon>verifyLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyLogin.aspx.designer.cs">
+      <DependentUpon>verifyLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifySign.aspx.cs">
+      <DependentUpon>verifySign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifySign.aspx.designer.cs">
+      <DependentUpon>verifySign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getMultiSignStatus.aspx.cs">
+      <DependentUpon>getMultiSignStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getMultiSignStatus.aspx.designer.cs">
+      <DependentUpon>getMultiSignStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestMultiSign.aspx.cs">
+      <DependentUpon>requestMultiSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestMultiSign.aspx.designer.cs">
+      <DependentUpon>requestMultiSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyMultiSign.aspx.cs">
+      <DependentUpon>verifyMultiSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyMultiSign.aspx.designer.cs">
+      <DependentUpon>verifyMultiSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Barocert\Barocert.csproj">
+      <Project>{5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C}</Project>
+      <Name>Barocert</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Linkhub\Linkhub.csproj">
+      <Project>{f960f70d-9c37-46f8-a1d4-938a81be9855}</Project>
+      <Name>Linkhub</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63618</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

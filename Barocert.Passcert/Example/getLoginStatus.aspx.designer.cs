@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Barocert.Kakaocert {
+namespace Barocert.Passcert.Example {
     
     
-    public partial class _Default {
+    public partial class getLoginStatus {
         
         /// <summary>
         /// Head1 컨트롤입니다.

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Barocert.Kakaocert._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Barocert.Passcert._Default" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,7 +12,7 @@
 	<p class="heading1">Barocert SDK ASP.NET Example.</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>카카오 본인인증 API</legend>
+		<legend>패스 본인인증 API</legend>
 		<ul>
 			<li><a href="Example/requestIdentity.aspx">requestIdentity</a> - 본인인증 요청</li>
 			<li><a href="Example/getIdentityStatus.aspx">getIdentityStatus</a> - 본인인증 서명상태 확인</li>
@@ -21,19 +21,16 @@
 	</fieldset>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>카카오 전자서명 API</legend>
+		<legend>패스 전자서명 API</legend>
 		<ul>
-			<li><a href="Example/requestSign.aspx">requestSign</a> - 전자서명 요청(단건)</li>
-			<li><a href="Example/getSignStatus.aspx">getSignState</a> - 전자서명 서명상태 확인(단건)</li>
-			<li><a href="Example/verifySign.aspx">verifySign</a> - 전자서명 서명검증(단건)</li>
-			<li><a href="Example/requestMultiSign.aspx">requestMultiSign</a> - 전자서명 요청(복수)</li>
-			<li><a href="Example/getMultiSignStatus.aspx">getMultiSignState</a> - 전자서명 서명상태 확인(복수)</li>
-			<li><a href="Example/verifyMultiSign.aspx">verifyMultiSign</a> - 전자서명 서명검증(복수)</li>
+			<li><a href="Example/requestSign.aspx">requestSign</a> - 전자서명 요청</li>
+			<li><a href="Example/getSignStatus.aspx">getSignState</a> - 전자서명 서명상태 확인</li>
+			<li><a href="Example/verifySign.aspx">verifySign</a> - 전자서명 서명검증</li>
 		</ul>
 	</fieldset>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>카카오 자동이체 출금동의 API</legend>
+		<legend>패스 자동이체 출금동의 API</legend>
 		<ul>
 			<li><a href="Example/requestCMS.aspx">requestCMS</a> - 자동이체 출금동의 요청</li>
 			<li><a href="Example/getCMSStatus.aspx">getCMSState</a> - 자동이체 출금동의 서명상태 확인</li>
@@ -42,12 +39,13 @@
 	</fieldset>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>카카오 간편로그인 API</legend>
+		<legend>패스 간편로그인 API</legend>
 		<ul>
+			<li><a href="Example/requestLogin.aspx">requestLogin</a> - 간편로그인 요청</li>
+			<li><a href="Example/getLoginStatus.aspx">getLoginState</a> - 간편로그인 서명상태 확인</li>
 			<li><a href="Example/verifyLogin.aspx">verifyLogin</a> - 간편로그인 서명검증</li>
 		</ul>
 	</fieldset>
-	
 </div>
 </body>
 </html>
