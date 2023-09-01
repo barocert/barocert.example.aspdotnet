@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barocert.Kakaocert", "Barocert.Kakaocert\Barocert.Kakaocert.csproj", "{4B954FEC-50A4-4E5E-8467-E4793771BA24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barocert.Kakaocert", "Barocert.Kakaocert\Barocert.Kakaocert.csproj", "{EED57D35-AE3F-4B9F-877D-A0230D3B46B9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C} = {5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C}
 	EndProjectSection
@@ -18,10 +18,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4B954FEC-50A4-4E5E-8467-E4793771BA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B954FEC-50A4-4E5E-8467-E4793771BA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B954FEC-50A4-4E5E-8467-E4793771BA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B954FEC-50A4-4E5E-8467-E4793771BA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED57D35-AE3F-4B9F-877D-A0230D3B46B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED57D35-AE3F-4B9F-877D-A0230D3B46B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED57D35-AE3F-4B9F-877D-A0230D3B46B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED57D35-AE3F-4B9F-877D-A0230D3B46B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F960F70D-9C37-46F8-A1D4-938A81BE9855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F960F70D-9C37-46F8-A1D4-938A81BE9855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F960F70D-9C37-46F8-A1D4-938A81BE9855}.Release|Any CPU.ActiveCfg = Release|Any CPU
