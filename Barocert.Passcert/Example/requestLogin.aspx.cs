@@ -40,15 +40,15 @@ namespace Barocert.Passcert.Example
             login.receiverBirthday = Global.passcertService.encrypt("19700101");
 
             // 인증요청 메시지 제목 - 최대 40자
-            login.reqTitle = "패스써트 간편로그인 인증요청 타이틀";
+            login.reqTitle = "간편로그인 요청 메시지 제목";
             // 요청 메시지 - 최대 500자
-            login.reqMessage = Global.passcertService.encrypt("패스써트 간편로그인 인증요청 내용");
+            login.reqMessage = Global.passcertService.encrypt("간편로그인 요청 메시지 내용");
             // 고객센터 연락처 - 최대 12자
             login.callCenterNum = "1600-9854";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             login.expireIn = 1000;
             // 서명 원문 - 최대 40자 까지 입력가능
-            login.token = Global.passcertService.encrypt("패스써트 간편로그인 요청토큰");
+            login.token = Global.passcertService.encrypt("간편로그인 요청 원문");
 
             // 사용자 동의 필요 여부
             login.userAgreementYN = true;

@@ -41,15 +41,15 @@ namespace Barocert.Passcert.Example
             identity.receiverBirthday = Global.passcertService.encrypt("19700101");
 
             // 인증요청 메시지 제목 - 최대 40자
-            identity.reqTitle = "패스써트 본인인증 인증요청 타이틀";
+            identity.reqTitle = "본인인증 요청 메시지 제목";
             // 요청 메시지 - 최대 500자
-            identity.reqMessage = Global.passcertService.encrypt("패스써트 본인인증 인증요청 내용");
+            identity.reqMessage = Global.passcertService.encrypt("본인인증 요청 메시지 내용");
             // 고객센터 연락처 - 최대 12자
             identity.callCenterNum = "1600-9854";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             identity.expireIn = 1000;
             // 서명 원문 - 최대 40자 까지 입력가능
-            identity.token = Global.passcertService.encrypt("패스써트 본인인증 요청토큰");
+            identity.token = Global.passcertService.encrypt("본인인증 요청 원문");
 
             // 사용자 동의 필요 여부
             identity.userAgreementYN = true;

@@ -2,12 +2,12 @@
 * 패스써트 API ASP.NET SDK Example
 *
 * ASP.NET SDK 연동환경 설정방법 안내 : https://developers.barocert.com/guide/kakao/identity/dotnet/getting-started/tutorial
-* 업데이트 일자 : 2023-08-30
+* 업데이트 일자 : 2023-10-30
 * 연동기술지원 연락처 : 1600-9854
 * 연동기술지원 이메일 : code@linkhubcorp.com
 *
 * <테스트 연동개발 준비사항>
-* 36, 38번 라인에 선언된 링크아이디(LinkID)와 비밀키(SecretKey)를
+* 32, 34번 라인에 선언된 링크아이디(LinkID)와 비밀키(SecretKey)를
 * 가입시 메일로 발급받은 인증정보를 참조하여 변경합니다.
 */
 

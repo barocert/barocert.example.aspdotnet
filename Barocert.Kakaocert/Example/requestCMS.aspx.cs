@@ -40,7 +40,7 @@ namespace Barocert.Kakaocert.Example
             cms.receiverBirthday = Global.kakaocertService.encrypt("19700101");
 
             // 인증요청 메시지 제목 - 최대 40자
-            cms.reqTitle = "인증요청 메시지 제공란";
+            cms.reqTitle = "출금동의 요청 메시지 제목";
 
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             cms.expireIn = 1000;

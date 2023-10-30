@@ -39,15 +39,15 @@ namespace Barocert.Passcert.Example
             sign.receiverBirthday = Global.passcertService.encrypt("19700101");
 
             // 인증요청 메시지 제목 - 최대 40자
-            sign.reqTitle = "패스써트 전자서명 인증요청 타이틀";
+            sign.reqTitle = "전자서명 요청 메시지 제목";
             // 전자서명 요청 메시지
-            sign.reqMessage = Global.passcertService.encrypt("패스써트 전자서명 인증요청 내용");
+            sign.reqMessage = Global.passcertService.encrypt("전자서명 요청 메시지 내용");
             // 고객센터 연락처
             sign.callCenterNum = "1600-9854";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             sign.expireIn = 1000;
             // 서명 원문 - 원문 2,800자 까지 입력가능
-            sign.token = Global.passcertService.encrypt("전자서명테스트데이터");
+            sign.token = Global.passcertService.encrypt("전자서명 요청 원문");
             // 서명 원문 유형
             // 'TEXT' - 일반 텍스트, 'HASH' - HASH 데이터, 'URL' - URL 데이터
             // 원본데이터(originalTypeCode, originalURL, originalFormatCode) 입력시 'TEXT'사용 불가

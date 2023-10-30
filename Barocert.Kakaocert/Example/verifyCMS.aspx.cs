@@ -32,7 +32,7 @@ namespace Barocert.Kakaocert.Example
             String clientCode = "023040000001";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02308280230400000010000000000005";
+            String receiptId = "02310300230400000010000000000005";
 
             try
             {

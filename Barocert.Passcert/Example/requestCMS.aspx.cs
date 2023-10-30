@@ -41,9 +41,9 @@ namespace Barocert.Passcert.Example
             cms.receiverBirthday = Global.passcertService.encrypt("19700101");
 
             // 인증요청 메시지 제목 - 최대 40자
-            cms.reqTitle = "패스써트 출금동의 인증요청 타이틀";
+            cms.reqTitle = "출금동의 요청 메시지 제목";
             // 요청 메시지 - 최대 500자
-            cms.reqMessage = Global.passcertService.encrypt("패스써트 출금동의 인증요청 내용");
+            cms.reqMessage = Global.passcertService.encrypt("출금동의 요청 메시지 내용");
             // 고객센터 연락처 - 최대 12자
             cms.callCenterNum = "1600-9854";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능

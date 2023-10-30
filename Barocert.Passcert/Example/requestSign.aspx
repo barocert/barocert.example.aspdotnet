@@ -18,7 +18,7 @@
 				<li>Response.code : <%= code %> </li>
 				<li>Response.message : <%= message %></li>
 			<% } else { %>            
-				<li>ReceiptID (접수아이디) : <%= result.receiptId%></li>
+				<li>ReceiptID (접수아이디) : <%= result.receiptID%></li>
 				<li>Scheme (앱스킴) :  <%= result.scheme %></li>
 				<li>MarketURL (앱다운로드URL) :  <%= result.marketUrl %></li>
 			<% } %>

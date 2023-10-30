@@ -33,7 +33,7 @@ namespace Barocert.Passcert.Example
             String clientCode = "023070000014";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02308280230700000140000000000001";
+            String receiptId = "02310300230700000140000000000008";
 
             try
             {

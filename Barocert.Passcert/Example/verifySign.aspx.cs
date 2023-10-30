@@ -13,12 +13,7 @@ using System.Xml.Linq;
 
 namespace Barocert.Passcert.Example
 {
-    /*
-     * 완료된 전자서명을 검증하고 전자서명값(signedData)을 반환 받습니다.
-     * 검증 함수는 전자서명 요청 함수를 호출한 당일 23시 59분 59초까지만 호출 가능합니다.
-     * 전자서명 요청 함수를 호출한 당일 23시 59분 59초 이후 검증 함수를 호출할 경우 오류가 반환됩니다.
-     * https://developers.barocert.com/reference/pass/dotnet/sign/api#VerifySign
-     */
+    
     public partial class verifySign : System.Web.UI.Page
     {
 
@@ -26,7 +21,12 @@ namespace Barocert.Passcert.Example
         public String message = null;
         public SignResult result = null;
 
-
+        /*
+        * 완료된 전자서명을 검증하고 전자서명값(signedData)을 반환 받습니다.
+        * 검증 함수는 전자서명 요청 함수를 호출한 당일 23시 59분 59초까지만 호출 가능합니다.
+        * 전자서명 요청 함수를 호출한 당일 23시 59분 59초 이후 검증 함수를 호출할 경우 오류가 반환됩니다.
+        * https://developers.barocert.com/reference/pass/dotnet/sign/api#VerifySign
+        */
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -34,7 +34,7 @@ namespace Barocert.Passcert.Example
             String clientCode = "023070000014";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02308280230700000140000000000004";
+            String receiptId = "02310300230700000140000000000009";
 
             // 전자서명 검증 요청 정보
             SignVerify signVerify = new SignVerify();
