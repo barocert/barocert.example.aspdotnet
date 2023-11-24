@@ -16,8 +16,8 @@ namespace Barocert.Passcert.Example
     public partial class requestCMS : System.Web.UI.Page
     {
 
-        public String code;
-        public String message;
+        public string code;
+        public string message;
         public CMSReceipt result;
 
         /*
@@ -28,7 +28,7 @@ namespace Barocert.Passcert.Example
         {
 
             // Passcert 이용기관코드, Passcert 파트너 사이트에서 확인
-            String clientCode = "023070000014";
+            string clientCode = "023070000014";
 
             // 출금동의 요청 정보 객체
             CMS cms = new CMS();

@@ -19,15 +19,15 @@ namespace Barocert.Kakaocert.Example
      */
     public partial class requestMultiSign : System.Web.UI.Page
     {
-        public String code;
-        public String message;
+        public string code;
+        public string message;
         public MultiSignReceipt result;
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "023040000001";
+            string clientCode = "023040000001";
 
             // 전자서명 요청 정보 객체
             MultiSign multiSign = new MultiSign();
@@ -41,6 +41,8 @@ namespace Barocert.Kakaocert.Example
 
             // 인증요청 메시지 제목 - 최대 40자
             multiSign.reqTitle = "전자서명(복수) 요청 메시지 제목";
+            // 상세 설명 - 최대 500자
+            multiSign.extraMessage = "전자서명(복수) 상세 설명";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             multiSign.expireIn = 1000;
 
@@ -48,7 +50,7 @@ namespace Barocert.Kakaocert.Example
             // 개별 요청 정보 객체
             MultiSignTokens token = new MultiSignTokens();
             // 인증요청 메시지 제목 - 최대 40자
-            token.reqTitle = "전자서명(복수) 요청 메시지 제목 1";
+            token.signTitle = "전자서명(복수) 서명 요청 제목 1";
             // 서명 원문 - 원문 2,800자 까지 입력가능
             token.token = Global.kakaocertService.encrypt("전자서명(복수) 요청 원문 1");
             multiSign.addToken(token);
@@ -56,7 +58,7 @@ namespace Barocert.Kakaocert.Example
             // 개별 요청 정보 객체
             MultiSignTokens token2 = new MultiSignTokens();
             // 인증요청 메시지 제목 - 최대 40자
-            token2.reqTitle = "전자서명(복수) 요청 메시지 제목 2";
+            token2.signTitle = "전자서명(복수) 서명 요청 제목 2";
             // 서명 원문 - 원문 2,800자 까지 입력가능
             token2.token = Global.kakaocertService.encrypt("전자서명(복수) 요청 원문 2");
             multiSign.addToken(token2);

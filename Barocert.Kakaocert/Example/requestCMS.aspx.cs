@@ -19,15 +19,15 @@ namespace Barocert.Kakaocert.Example
      */
     public partial class requestCMS : System.Web.UI.Page
     {
-        public String code;
-        public String message;
+        public string code;
+        public string message;
         public CMSReceipt result;
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "023040000001";
+            string clientCode = "023040000001";
 
             // 출금동의 요청 정보 객체
             CMS cms = new CMS();
@@ -41,7 +41,8 @@ namespace Barocert.Kakaocert.Example
 
             // 인증요청 메시지 제목 - 최대 40자
             cms.reqTitle = "출금동의 요청 메시지 제목";
-
+            // 상세 설명 - 최대 500자
+            cms.extraMessage = "출금동의 상세 설명";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             cms.expireIn = 1000;
 

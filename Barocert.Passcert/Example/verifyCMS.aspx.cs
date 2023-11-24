@@ -15,8 +15,8 @@ namespace Barocert.Passcert.Example
 {
     public partial class verifyCMS : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public string code = null;
+        public string message = null;
         public CMSResult result = null;
 
         /*
@@ -29,10 +29,10 @@ namespace Barocert.Passcert.Example
         {
 
             // Passcert 이용기관코드, Passcert 파트너 사이트에서 확인
-            String clientCode = "023070000014";
+            string clientCode = "023070000014";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02310300230700000140000000000010";
+            string receiptID = "02310300230700000140000000000010";
 
             // 출금동의 검증 요청 정보
             CMSVerify cmsVerify = new CMSVerify();
@@ -43,7 +43,7 @@ namespace Barocert.Passcert.Example
 
             try
             {
-                result = Global.passcertService.verifyCMS(clientCode, receiptId, cmsVerify);
+                result = Global.passcertService.verifyCMS(clientCode, receiptID, cmsVerify);
             }
             catch (BarocertException ex)
             {

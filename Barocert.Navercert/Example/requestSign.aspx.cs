@@ -15,8 +15,8 @@ namespace Barocert.Navercert.Example
 {
     public partial class requestSign : System.Web.UI.Page
     {
-        public String code;
-        public String message;
+        public string code;
+        public string message;
         public SignReceipt result;
 
         /*
@@ -26,7 +26,7 @@ namespace Barocert.Navercert.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             // Navercert 이용기관코드, Navercert 파트너 사이트에서 확인
-            String clientCode = "023090000021";
+            string clientCode = "023090000021";
 
             // 전자서명 요청 정보 객체
             Sign sign = new Sign();
@@ -47,7 +47,7 @@ namespace Barocert.Navercert.Example
             // 전자서명 요청 메시지
             sign.reqMessage = Global.navercertService.encrypt("전자서명(단건) 요청 메시지 내용");
             // 서명 원문 - 원문 2,800자 까지 입력가능
-            sign.token = Global.navercertService.encrypt("전자서명테스트데이터");
+            sign.token = Global.navercertService.encrypt("전자서명(단건) 요청 원문");
             // 서명 원문 유형
             // 'TEXT' - 일반 텍스트, 'HASH' - HASH 데이터
             sign.tokenType = "TEXT";

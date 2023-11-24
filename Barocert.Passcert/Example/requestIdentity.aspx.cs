@@ -16,8 +16,8 @@ namespace Barocert.Passcert.Example
     public partial class requestIdentity : System.Web.UI.Page
     {
 
-        public String code;
-        public String message;
+        public string code;
+        public string message;
         public IdentityReceipt result;
 
         /**
@@ -28,7 +28,7 @@ namespace Barocert.Passcert.Example
         {
 
             // Passcert 이용기관코드, Passcert 파트너 사이트에서 확인
-            String clientCode = "023070000014";
+            string clientCode = "023070000014";
 
             // 본인인증 요청 정보 객체
             Identity identity = new Identity();

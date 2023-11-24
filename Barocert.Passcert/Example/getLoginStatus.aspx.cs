@@ -15,8 +15,8 @@ namespace Barocert.Passcert.Example
 {
     public partial class getLoginStatus : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public string code = null;
+        public string message = null;
         public LoginStatus result = null;
 
 
@@ -30,14 +30,14 @@ namespace Barocert.Passcert.Example
         {
 
             // Passcert 이용기관코드, Passcert 파트너 사이트에서 확인
-            String clientCode = "023070000014";
+            string clientCode = "023070000014";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02310300230700000140000000000011";
+            string receiptID = "02310300230700000140000000000011";
 
             try
             {
-                result = Global.passcertService.getLoginStatus(clientCode, receiptId);
+                result = Global.passcertService.getLoginStatus(clientCode, receiptID);
             }
             catch (BarocertException ex)
             {

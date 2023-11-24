@@ -15,8 +15,8 @@ namespace Barocert.Navercert.Example
 {
     public partial class requestMultiSign : System.Web.UI.Page
     {
-        public String code;
-        public String message;
+        public string code;
+        public string message;
         public MultiSignReceipt result;
 
         /*
@@ -27,7 +27,7 @@ namespace Barocert.Navercert.Example
         {
 
             // Navercert 이용기관코드, Navercert 파트너 사이트에서 확인
-            String clientCode = "023090000021";
+            string clientCode = "023090000021";
 
             // 전자서명(복수) 요청 정보 객체
             MultiSign multiSign = new MultiSign();

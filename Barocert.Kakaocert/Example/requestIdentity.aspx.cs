@@ -20,15 +20,15 @@ namespace Barocert.Kakaocert.Example
     public partial class requestIdentity : System.Web.UI.Page
     {
 
-        public String code;
-        public String message;
+        public string code;
+        public string message;
         public IdentityReceipt result;
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "023040000001";
+            string clientCode = "023040000001";
 
             // 본인인증 요청 정보 객체
             Identity identity = new Identity();
@@ -42,6 +42,8 @@ namespace Barocert.Kakaocert.Example
 
             // 인증요청 메시지 제목 - 최대 40자
             identity.reqTitle = "본인인증 요청 메시지 제목";
+            // 상세 설명 - 최대 500자
+            identity.extraMessage = "본인인증 상세 설명";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             identity.expireIn = 1000;
             // 서명 원문 - 최대 40자 까지 입력가능

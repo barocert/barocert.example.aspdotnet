@@ -15,8 +15,8 @@ namespace Barocert.Navercert.Example
 {
     public partial class getMultiSignStatus : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public string code = null;
+        public string message = null;
         public MultiSignStatus result = null;
 
         /*
@@ -27,14 +27,14 @@ namespace Barocert.Navercert.Example
         {
 
             // navercert 이용기관코드, navercert 파트너 사이트에서 확인
-            String clientCode = "023090000021";
+            string clientCode = "023090000021";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02310270230900000210000000000005";
+            string receiptID = "02310270230900000210000000000005";
 
             try
             {
-                result = Global.navercertService.getMultiSignStatus(clientCode, receiptId);
+                result = Global.navercertService.getMultiSignStatus(clientCode, receiptID);
             }
             catch (BarocertException ex)
             {

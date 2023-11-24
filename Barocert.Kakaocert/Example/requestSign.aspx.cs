@@ -19,14 +19,14 @@ namespace Barocert.Kakaocert.Example
      */
     public partial class requestSign : System.Web.UI.Page
     {
-        public String code;
-        public String message;
+        public string code;
+        public string message;
         public SignReceipt result;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "023040000001";
+            string clientCode = "023040000001";
 
             // 전자서명 요청 정보 객체
             Sign sign = new Sign();
@@ -38,8 +38,10 @@ namespace Barocert.Kakaocert.Example
             // 수신자 생년월일 - 8자 (yyyyMMdd)
             sign.receiverBirthday = Global.kakaocertService.encrypt("19700101");
 
-            // 인증요청 메시지 제목 - 최대 40자
-            sign.reqTitle = "전자서명(단건) 요청 메시지 제목";
+            // 서명 요청 제목 - 최대 40자
+            sign.signTitle = "전자서명(단건) 서명 요청 제목";
+            // 상세 설명 - 최대 500자
+            sign.extraMessage = "전자서명(단건) 상세 설명";
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             sign.expireIn = 1000;
             // 서명 원문 - 원문 2,800자 까지 입력가능

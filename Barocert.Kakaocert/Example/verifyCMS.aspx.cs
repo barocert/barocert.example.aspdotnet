@@ -21,22 +21,22 @@ namespace Barocert.Kakaocert.Example
      */
     public partial class verifyCMS : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public string code = null;
+        public string message = null;
         public CMSResult result = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
-            String clientCode = "023040000001";
+            string clientCode = "023040000001";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "02310300230400000010000000000005";
+            string receiptID = "02310300230400000010000000000005";
 
             try
             {
-                result = Global.kakaocertService.verifyCMS(clientCode, receiptId);
+                result = Global.kakaocertService.verifyCMS(clientCode, receiptID);
             }
             catch (BarocertException ex)
             {
