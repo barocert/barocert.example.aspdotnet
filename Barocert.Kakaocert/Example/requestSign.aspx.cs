@@ -40,8 +40,8 @@ namespace Barocert.Kakaocert.Example
 
             // 서명 요청 제목 - 최대 40자
             sign.signTitle = "전자서명(단건) 서명 요청 제목";
-            // 상세 설명 - 최대 500자
-            sign.extraMessage = "전자서명(단건) 상세 설명";
+            // 커스텀 메시지 - 최대 500자
+            sign.extraMessage = Global.kakaocertService.encrypt("전자서명(단건) 커스텀 메시지");
             // 인증요청 만료시간 - 최대 1,000(초)까지 입력 가능
             sign.expireIn = 1000;
             // 서명 원문 - 원문 2,800자 까지 입력가능
