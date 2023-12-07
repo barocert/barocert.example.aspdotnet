@@ -46,11 +46,15 @@ namespace Barocert.Navercert.Example
             sign.expireIn = 1000;
             // 전자서명 요청 메시지
             sign.reqMessage = Global.navercertService.encrypt("전자서명(단건) 요청 메시지 내용");
-            // 서명 원문 - 원문 2,800자 까지 입력가능
-            sign.token = Global.navercertService.encrypt("전자서명(단건) 요청 원문");
             // 서명 원문 유형
             // 'TEXT' - 일반 텍스트, 'HASH' - HASH 데이터
             sign.tokenType = "TEXT";
+            // 서명 원문 - 원문 2,800자 까지 입력가능
+            sign.token = Global.navercertService.encrypt("전자서명(단건) 요청 원문");
+            // 서명 원문 유형
+            // sign.tokenType = "HASH";
+            // 서명 원문 - 원문 2,800자 까지 입력가능
+            // sign.token = Global.navercertService.encrypt(Global.navercertService.sha256("전자서명(단건) 요청 원문"));
 
             // AppToApp 인증요청 여부
             // true - AppToApp 인증방식, false - Talk Message 인증방식
@@ -58,8 +62,8 @@ namespace Barocert.Navercert.Example
             // ApptoApp 인증방식에서 사용
             // 모바일장비 유형('ANDROID', 'IOS'), 대문자 입력(대소문자 구분)
             // sign.deviceOSType = "IOS";
-            // ApptoApp 인증방식에서 사용
-            // 에러시 호출할 URL
+            // AppToApp 방식 이용시, 호출할 URL
+            // "http", "https"등의 웹프로토콜 사용 불가
             // sign.returnURL = "navercert://sign";
 
             try

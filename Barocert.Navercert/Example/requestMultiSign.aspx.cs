@@ -56,6 +56,10 @@ namespace Barocert.Navercert.Example
             token.tokenType = "TEXT";
             // 서명 원문 - 최대 2,800자까지 입력가능
             token.token = Global.navercertService.encrypt("전자서명(복수) 요청 원문 1");
+            // 서명 원문 유형
+            // token.tokenType = "HASH";
+            // 서명 원문 - 원문 2,800자 까지 입력가능
+            // token.token = Global.navercertService.encrypt(Global.navercertService.sha256("전자서명(복수) 요청 원문 1"));
             multiSign.addToken(token);
 
             // 개별문서 등록 - 최대 50건
@@ -66,6 +70,10 @@ namespace Barocert.Navercert.Example
             token2.tokenType = "TEXT";
             // 서명 원문 - 최대 2,800자까지 입력가능
             token2.token = Global.navercertService.encrypt("전자서명(복수) 요청 원문 2");
+            // 서명 원문 유형
+            // token2.tokenType = "HASH";
+            // 서명 원문 - 원문 2,800자 까지 입력가능
+            // token2.token = Global.navercertService.encrypt(Global.navercertService.sha256("전자서명(복수) 요청 원문 2"));
             multiSign.addToken(token2);
 
             // AppToApp 인증요청 여부
@@ -74,8 +82,8 @@ namespace Barocert.Navercert.Example
             // ApptoApp 인증방식에서 사용
             // 모바일장비 유형('ANDROID', 'IOS'), 대문자 입력(대소문자 구분)
             // multiSign.deviceOSType = "IOS";
-            // ApptoApp 인증방식에서 사용
-            // 에러시 호출할 URL
+            // AppToApp 방식 이용시, 호출할 URL
+            // "http", "https"등의 웹프로토콜 사용 불가
             // multiSign.returnURL = "navercert://sign";
             
             try

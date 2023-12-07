@@ -13,15 +13,15 @@ using System.Xml.Linq;
 
 namespace Barocert.Navercert.Example
 {
-    public partial class getSignStatus : System.Web.UI.Page
+    public partial class getCMSStatus : System.Web.UI.Page
     {
         public string code = null;
         public string message = null;
-        public SignStatus result = null;
+        public CMSStatus result = null;
 
         /*
-         * 전자서명(단건) 요청 후 반환받은 접수아이디로 인증 진행 상태를 확인합니다.
-         * https://developers.barocert.com/reference/naver/dotnet/sign/api-single#GetSignStatus
+         * 자동이체 출금동의 요청 후 반환받은 접수아이디로 인증 진행 상태를 확인합니다.
+         * https://developers.barocert.com/reference/naver/dotnet/cms/api#GetCMSStatus
          */
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,11 +30,11 @@ namespace Barocert.Navercert.Example
             string clientCode = "023090000021";
 
             // 요청시 반환받은 접수아이디
-            string receiptID = "02312080230900000210000000000006";
+            string receiptID = "02312080230900000210000000000004";
 
             try
             {
-                result = Global.navercertService.getSignStatus(clientCode, receiptID);
+                result = Global.navercertService.getCMSStatus(clientCode, receiptID);
             }
             catch (BarocertException ex)
             {

@@ -30,7 +30,7 @@ namespace Barocert.Navercert.Example
             string clientCode = "023090000021";
 
             // 요청시 반환받은 접수아이디
-            string receiptID = "02310270230900000210000000000001";
+            string receiptID = "02312080230900000210000000000001";
 
             try
             {

@@ -51,8 +51,8 @@ namespace Barocert.Navercert.Example
             // ApptoApp 인증방식에서 사용
             // 모바일장비 유형('ANDROID', 'IOS'), 대문자 입력(대소문자 구분)
             // identity.deviceOSType = "IOS";
-            // ApptoApp 인증방식에서 사용
-            // 호출할 URL
+            // AppToApp 방식 이용시, 호출할 URL
+            // "http", "https"등의 웹프로토콜 사용 불가
             // identity.returnURL = "navercert://sign";
             
             try

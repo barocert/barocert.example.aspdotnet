@@ -31,6 +31,15 @@
 			<li><a href="Example/verifyMultiSign.aspx">verifyMultiSign</a> - 전자서명 서명검증(복수)</li>
 		</ul>
 	</fieldset>
+	<br/>
+	<fieldset class="fieldset1">
+		<legend>네이버 출금동의 API</legend>
+		<ul>
+			<li><a href="Example/requestCMS.aspx">requestCMS</a> - 출금동의 요청</li>
+			<li><a href="Example/getCMSStatus.aspx">getCMSStatus</a> - 출금동의 서명상태 확인</li>
+			<li><a href="Example/verifyCMS.aspx">verifyCMS</a> - 출금동의 서명검증</li>
+		</ul>
+	</fieldset>
 </div>
 </body>
 </html>

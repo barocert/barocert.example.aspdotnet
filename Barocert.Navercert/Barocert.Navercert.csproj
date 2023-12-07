@@ -58,6 +58,9 @@
     <Content Include="Example\getIdentityStatus.aspx" />
     <Content Include="Example\getMultiSignStatus.aspx" />
     <Content Include="Example\getSignStatus.aspx" />
+    <Content Include="Example\getCMSStatus.aspx" />
+    <Content Include="Example\requestCMS.aspx" />
+    <Content Include="Example\verifyCMS.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Example\requestIdentity.aspx" />
     <Content Include="Example\requestMultiSign.aspx" />
@@ -82,6 +85,18 @@
     </Compile>
     <Compile Include="Example\getSignStatus.aspx.cs">
       <DependentUpon>getSignStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCMSStatus.aspx.cs">
+      <DependentUpon>getCMSStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestCMS.aspx.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyCMS.aspx.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -141,7 +156,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>61321</DevelopmentServerPort>
+          <DevelopmentServerPort>60888</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
