@@ -26,7 +26,7 @@ namespace Barocert.Navercert.Example
              * 완료된 전자서명을 검증하고 전자서명값(signedData)을 반환 받습니다.
              * 네이버 보안정책에 따라 검증 API는 1회만 호출할 수 있습니다. 재시도시 오류가 반환됩니다.
              * 전자서명 만료일시 이후에 검증 API를 호출하면 오류가 반환됩니다.
-             * https://developers.barocert.com/reference/naver/java/cms/api#VerifyCMS
+             * https://developers.barocert.com/reference/naver/dotnet/cms/api#VerifyCMS
              */
 
             // Navercert 이용기관코드, Navercert 파트너 사이트에서 확인
