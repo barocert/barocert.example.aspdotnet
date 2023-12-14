@@ -20,7 +20,7 @@
 			<% } else { %>
 				<li>ClientCode (이용기관 코드) : <%=result.clientCode %></li>
 				<li>ReceiptID (접수 아이디) : <%=result.receiptID %></li>
-				<li>State (상태코드) : <%=result.state %></li>
+				<li>State (상태) : <%=result.state %></li>
 				<li>ExpireDT (서명만료일시) : <%=result.expireDT %></li>
 			<% } %>
 		</ul>
