@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-	<title>Kakaocert SDK ASP.NET Example</title>
+	<title>Barocert ASP.NET Example</title>
 	<link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>

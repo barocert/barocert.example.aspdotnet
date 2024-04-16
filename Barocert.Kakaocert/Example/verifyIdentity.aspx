@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-	<title>Kakaocert SDK ASP.NET Example</title>
+	<title>Barocert ASP.NET Example</title>
 	<link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -22,6 +22,10 @@
 				<li>State (상태) : <%= result.state%></li>
 				<li>SignedData (전자서명 데이터 전문) : <%= result.signedData%></li>
 				<li>Ci (연계정보) : <%= result.ci%></li>
+				<li>ReceiverName (수신자 성명) : <%= result.receiverName%></li>
+				<li>ReceiverYear (수신자 출생년도) : <%= result.receiverYear%></li>
+				<li>ReceiverDay (수신자 출생월일) : <%= result.receiverDay%></li>
+				<li>ReceiverHP (수신자 휴대폰번호) : <%= result.receiverHP%></li>
 			<% } %>
 		</ul>
 	</fieldset>
